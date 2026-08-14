@@ -14,48 +14,56 @@
     <h2>1. Enrollment Form</h2>
 
     <form>
-        <label>Full Name:</label><br>
-        <input type="text" placeholder="full name"><br><br>
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" placeholder="full name"><br><br>
 
-        <label>Email Address:</label><br>
-        <input type="email" placeholder="you@example.com"><br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" placeholder="you@example.com"><br><br>
 
-        <label>Phone Number:</label><br>
-        <input type="text" placeholder="07XX XXX XXX"><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" placeholder="07XX XXX XXX"><br><br>
 
-        <label>Date of Birth:</label><br>
-        <input type="date"><br><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob"><br><br>
 
-        <label>Gender:</label><br>
-        <input type="radio" name="gender"> Female
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Prefer not to say<br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="prefer-not-to-say" name="gender">
+        <label for="prefer-not-to-say">Prefer not to say</label><br><br>
 
-        <label>Track You Are Interested In:</label><br>
-        <select>
+        <label for="track">Track You Are Interested In:</label><br>
+        <select id="track">
             <option>-- Select a track --</option>
         </select><br><br>
 
-        <label>Preferred Learning Days:</label><br>
-        <select>
+        <label for="learning-days">Preferred Learning Days:</label><br>
+        <select id="learning-days">
             <option>Weekdays</option>
         </select><br><br>
 
-        <label>Skills You Already Know:</label><br>
-        <input type="checkbox"> HTML
-        <input type="checkbox"> CSS
-        <input type="checkbox"> JavaScript 
-        <input type="checkbox"> Git
-        <input type="checkbox"> None yet<br><br>
+        <label for="skills">Skills You Already Know:</label><br>
+        <input type="checkbox" id="html">
+        <label for="html"> HTML</label>
+        <input type="checkbox" id="css">
+        <label for="css"> CSS</label>
+        <input type="checkbox" id="javascript">
+        <label for="javascript"> JavaScript</label>
+        <input type="checkbox" id="git">
+        <label for="git"> Git</label>
+        <input type="checkbox" id="none-yet">
+        <label for="none-yet"> None yet</label><br><br>
 
-        <label>Self-Rated Experience Level (0-100):</label><br>
-        <input type="range" min="0" max="100" value="10"><br><br>
+        <label for="experience">Self-Rated Experience Level (0-100):</label><br>
+        <input type="range" id="experience" min="0" max="100" value="10"><br><br>
 
-        <label>Pick a Profile Tag Colour:</label><br>
-        <input type="color" value="#2d7d73"><br><br>
+        <label for="profile-color">Pick a Profile Tag Colour:</label><br>
+        <input type="color" id="profile-color" value="#2d7d73"><br><br>
 
-        <label>Upload Your CV (PDF):</label><br>
-        <input type="file"><br><br>
+        <label for="cv">Upload Your CV (PDF):</label><br>
+        <input type="file" id="cv"><br><br>
 
       
     </form>
